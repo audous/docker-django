@@ -19,5 +19,8 @@ $ docker-compose exec web sh
 $ python manage.py migrate
 
 ###python create admin user
-python manage.py createsuperuser
+$ python manage.py createsuperuser
+
+###this project already has this in the files for music as app example. You can make another app with this command
+$ python manage.py startapp name_of_my_new_app
 
