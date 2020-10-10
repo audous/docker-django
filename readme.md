@@ -37,7 +37,28 @@ python manage.py createsuperuser
 ```bash
 python manage.py startapp name_of_your_new_app
 ```
-## Shutting Down
+
+## other useful docker commands
+
+### Shutting Down
 ```bash
 docker-compose down
+```
+
+### start back up
+```bash
+docker-compose up
+```
+
+### list all containers
+```bash
+docker ps -a -q
+```
+### stop all containers
+```bash
+docker stop $(docker ps -a -q)
+```
+### remove all containers
+```bash
+docker rm $(docker ps -a -q)
 ```
