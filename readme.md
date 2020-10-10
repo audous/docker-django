@@ -13,22 +13,31 @@ Database: Postgres
 This will get you to the "Create a Django project" step from this tutorial https://docs.docker.com/compose/django/ 
 
 ### open terminal at project root and enter these commands
-$ docker-compose run web django-admin startproject composeexample .
-$ docker-compose up
-
+```bash
+docker-compose run web django-admin startproject composeexample .
+```
+```bash
+docker-compose up
+```
 ### open a shell inside the Django container
-$ docker-compose exec web sh
-
+```bash
+docker-compose exec web sh
+```
 ## common commands to get started
 
 ### python migrate
-$ python manage.py migrate
-
+```bash
+python manage.py migrate
+```
 ### python create admin user
-$ python manage.py createsuperuser
-
+```bash
+python manage.py createsuperuser
+```
 ### You can create another app called "name_of_your_new_app" with this command
-$ python manage.py startapp name_of_your_new_app
-
+```bash
+python manage.py startapp name_of_your_new_app
+```
 ## Shutting Down
-$ docker-compose down
+```bash
+docker-compose down
+```
