@@ -45,7 +45,7 @@ python manage.py startapp name_of_your_new_app
 docker-compose down
 ```
 
-### start back up
+### start up container again
 ```bash
 docker-compose up
 ```
