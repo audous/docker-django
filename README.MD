@@ -1,19 +1,25 @@
-# Docker Django Getting Started Guide
+# Docker Django Boilerplate
+Docker Django Boilerplate Fork this project to create your own Django project with a docker container.
 
-## clone this repo 
-This will give you the files needed to complete this tutorial https://docs.docker.com/compose/django/ 
+The docker container is containing this stack: 
 
-The clone is a shortcut to this tutorial section - Create a Django project
+Programming Language: Python 
 
-## Create a Django project
+Framework: Django
 
-### open terminal at project root 
+Database: Postgres
 
+## fork this repo 
+This will get you to the "Create a Django project" step from this tutorial https://docs.docker.com/compose/django/ 
+
+### open terminal at project root and enter these commands
 $ docker-compose run web django-admin startproject composeexample .
 $ docker-compose up
 
-### open shell in container
+### open a shell inside the Django container
 $ docker-compose exec web sh
+
+## common commands to get started
 
 ### python migrate
 $ python manage.py migrate
@@ -21,6 +27,8 @@ $ python manage.py migrate
 ### python create admin user
 $ python manage.py createsuperuser
 
-### this project already has this in the files for music as app example. You can make another app with this command
-$ python manage.py startapp name_of_my_new_app
+### You can create another app called "name_of_your_new_app" with this command
+$ python manage.py startapp name_of_your_new_app
 
+## Shutting Down
+$ docker-compose down
