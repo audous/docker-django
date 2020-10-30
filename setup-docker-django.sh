@@ -4,3 +4,16 @@
 
 # docker-compose run web django-admin startproject website .
 
+echo 'start setup-docker-django'
+
+docker-compose run web django-admin startproject website .
+
+docker-compose run web python manage.py startapp music
+
+docker-compose exec web python manage.py migrate
+
+docker-compose exec web python manage.py createsuperuser
+
+docker-compose up
+
+echo 'end setup-docker-django'
