@@ -14,7 +14,7 @@ This will get you to the "Create a Django project" step from this tutorial https
 
 ### open terminal at project root and enter these commands
 ```bash
-docker-compose run web django-admin startproject composeexample .
+docker-compose run web django-admin startproject website .
 ```
 ```bash
 docker-compose up
